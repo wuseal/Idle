@@ -1,0 +1,25 @@
+# Project exclude paths
+/.gradle/
+/app/build/bin/
+/app/build/classes/
+/app/build/cocoapods/
+/app/build/generated/not_namespaced_r_class_sources/
+/app/build/intermediates/annotation_processor_list/
+/app/build/intermediates/apk_list/
+/app/build/intermediates/app_classes/
+/app/build/intermediates/blame/
+/app/build/intermediates/bundle_manifest/
+/app/build/intermediates/compatible_screen_manifest/
+/app/build/intermediates/incremental/
+/app/build/intermediates/instant_app_manifest/
+/app/build/intermediates/instant_run_merged_manifests/
+/app/build/intermediates/javac/
+/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/app/build/intermediates/merged_manifests/
+/app/build/intermediates/metadata_feature_manifest/
+/app/build/intermediates/processed_res/
+/app/build/intermediates/res/
+/app/build/intermediates/symbols/
+/app/build/kotlin/
+/app/build/outputs/
+/app/build/tmp/
