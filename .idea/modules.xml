@@ -3,15 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Idle.iml" filepath="$PROJECT_DIR$/.idea/Idle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.commonMain.iml" filepath="$PROJECT_DIR$/app/Idle.app.commonMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.commonTest.iml" filepath="$PROJECT_DIR$/app/Idle.app.commonTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.iOS32Main.iml" filepath="$PROJECT_DIR$/app/Idle.app.iOS32Main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.iOS32Test.iml" filepath="$PROJECT_DIR$/app/Idle.app.iOS32Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.iOS64Main.iml" filepath="$PROJECT_DIR$/app/Idle.app.iOS64Main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.iOS64Test.iml" filepath="$PROJECT_DIR$/app/Idle.app.iOS64Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.iOSMain.iml" filepath="$PROJECT_DIR$/app/Idle.app.iOSMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Idle.app.iOSTest.iml" filepath="$PROJECT_DIR$/app/Idle.app.iOSTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidapp/androidapp.iml" filepath="$PROJECT_DIR$/androidapp/androidapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/mpplib.iml" filepath="$PROJECT_DIR$/mpplib/mpplib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/wu.seal.idle.library.app.commonMain.iml" filepath="$PROJECT_DIR$/app/wu.seal.idle.library.app.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/wu.seal.idle.library.app.commonTest.iml" filepath="$PROJECT_DIR$/app/wu.seal.idle.library.app.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/wu.seal.idle.library.app.iosMain.iml" filepath="$PROJECT_DIR$/app/wu.seal.idle.library.app.iosMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/wu.seal.idle.library.app.iosTest.iml" filepath="$PROJECT_DIR$/app/wu.seal.idle.library.app.iosTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonMain.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonTest.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosMain.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosTest.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosTest.iml" />
     </modules>
   </component>
 </project>

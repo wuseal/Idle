@@ -1,16 +1,338 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732f59c0-bf15-4d9e-9914-e14bb160fe6c" name="Default Changelist" comment="" />
+    <list default="true" id="732f59c0-bf15-4d9e-9914-e14bb160fe6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_41_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/androidapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/androidTest/java/wu/seal/mpp/idle/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/main/java/wu/seal/mpp/idle/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../androidapp/src/test/java/wu/seal/mpp/idle/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/wu.seal.idle.library.app.commonMain.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/wu.seal.idle.library.app.commonTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/wu.seal.idle.library.app.iosMain.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/wu.seal.idle.library.app.iosTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Idle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Idle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ARKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ARKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AVFoundation__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AVFoundation__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AVKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AVKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Accelerate__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Accelerate__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Accounts__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Accounts__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AdSupport__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AdSupport__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AddressBookUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AddressBookUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AddressBook__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AddressBook__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AssetsLibrary__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AssetsLibrary__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AudioToolbox__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AudioToolbox__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AuthenticationServices__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___AuthenticationServices__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___BusinessChat__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___BusinessChat__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CFNetwork__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CFNetwork__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CallKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CallKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CarPlay__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CarPlay__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ClassKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ClassKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CloudKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CloudKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CommonCrypto__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CommonCrypto__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ContactsUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ContactsUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Contacts__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Contacts__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreAudioKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreAudioKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreAudio__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreAudio__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreBluetooth__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreBluetooth__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreData__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreData__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreFoundation__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreFoundation__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreGraphics__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreGraphics__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreImage__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreImage__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreLocation__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreLocation__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreMIDI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreMIDI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreML__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreML__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreMedia__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreMedia__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreMotion__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreMotion__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreNFC__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreNFC__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreServices__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreServices__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreSpotlight__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreSpotlight__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreTelephony__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreTelephony__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreText__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreText__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreVideo__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___CoreVideo__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___DeviceCheck__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___DeviceCheck__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___EAGL__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___EAGL__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___EventKitUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___EventKitUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___EventKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___EventKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ExternalAccessory__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ExternalAccessory__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___FileProviderUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___FileProviderUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___FileProvider__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___FileProvider__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Foundation__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Foundation__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GLKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GLKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GSS__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GSS__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GameController__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GameController__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GameKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GameKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GameplayKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___GameplayKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___HealthKitUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___HealthKitUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___HealthKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___HealthKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___HomeKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___HomeKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IOSurface__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IOSurface__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IdentityLookupUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IdentityLookupUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IdentityLookup__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IdentityLookup__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ImageIO__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ImageIO__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IntentsUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___IntentsUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Intents__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Intents__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___LocalAuthentication__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___LocalAuthentication__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MapKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MapKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MediaAccessibility__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MediaAccessibility__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MediaPlayer__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MediaPlayer__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MediaToolbox__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MediaToolbox__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MessageUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MessageUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Messages__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Messages__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MetalKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MetalKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MetalPerformanceShaders__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MetalPerformanceShaders__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Metal__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Metal__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MobileCoreServices__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MobileCoreServices__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ModelIO__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ModelIO__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MultipeerConnectivity__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___MultipeerConnectivity__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NaturalLanguage__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NaturalLanguage__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NetworkExtension__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NetworkExtension__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Network__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Network__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NewsstandKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NewsstandKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NotificationCenter__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___NotificationCenter__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenAL__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenAL__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLES2__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLES2__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLES3__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLES3__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLESCommon__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLESCommon__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLES__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___OpenGLES__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PDFKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PDFKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PassKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PassKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PhotosUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PhotosUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Photos__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Photos__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PushKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___PushKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___QuartzCore__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___QuartzCore__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___QuickLook__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___QuickLook__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ReplayKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___ReplayKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SafariServices__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SafariServices__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SceneKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SceneKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Security__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Security__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Social__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Social__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Speech__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Speech__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SpriteKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SpriteKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___StoreKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___StoreKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SystemConfiguration__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___SystemConfiguration__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Twitter__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Twitter__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___UIKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___UIKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___UserNotificationsUI__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___UserNotificationsUI__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___UserNotifications__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___UserNotifications__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___VideoSubscriberAccount__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___VideoSubscriberAccount__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___VideoToolbox__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___VideoToolbox__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Vision__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___Vision__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___WatchConnectivity__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___WatchConnectivity__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___WatchKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___WatchKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___WebKit__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___WebKit__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___builtin__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___builtin__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___darwin__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___darwin__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___iAd__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___iAd__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___iconv__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___iconv__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___objc__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___objc__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___posix__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___posix__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___stdlib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___zlib__ios_arm32_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Kotlin_Native_1_3_41___zlib__ios_arm64_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.commonMain.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.commonTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.iOS32Main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.iOS32Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.iOS64Main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.iOS64Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.iOSMain.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Idle.app.iOSTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/generated/source/buildConfig/androidTest/debug/org/jetbrains/kotlin/mpp_app_android/test/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/generated/source/buildConfig/debug/sample/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/build/generated/source/buildConfig/debug/sample/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/sample/SampleAndroid.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/sample/SampleAndroid.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wuhaibao.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wuhaibao.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp.xcworkspace/xcuserdata/wuhaibao.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp.xcworkspace/xcuserdata/wuhaibao.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_BA337B8C-11DA-4183-AB6F-8BB17CA765D5" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_c8285c0a40b4edf39ff5998456f740cf5cd32206" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1OdTa73Eb7yclBPKsFQqBNlIl6L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/iosApp.xcworkspace" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -59,10 +381,25 @@
       <workItem from="1564310262680" duration="2000" />
       <workItem from="1564310286646" duration="744000" />
       <workItem from="1564311060683" duration="13000" />
+      <workItem from="1564311094548" duration="895000" />
+      <workItem from="1564312896222" duration="5228000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
