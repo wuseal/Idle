@@ -12,8 +12,14 @@
       <module fileurl="file://$PROJECT_DIR$/app/wu.seal.idle.library.app.iosTest.iml" filepath="$PROJECT_DIR$/app/wu.seal.idle.library.app.iosTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonMain.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonTest.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm32Main.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm32Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm32Test.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm32Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm64Main.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm64Test.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosArm64Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosMain.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosTest.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosX64Main.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosX64Test.iml" filepath="$PROJECT_DIR$/mpplib/wu.seal.idle.library.mpplib.iosX64Test.iml" />
     </modules>
   </component>
 </project>

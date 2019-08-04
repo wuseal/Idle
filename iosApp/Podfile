@@ -3,20 +3,12 @@ project 'iosApp.xcodeproj'
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'app' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for app
-
-end
-
 target 'iosApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for iosApp
-  pod 'app', :path => '/Users/wuhaibao/IdeaProjects/Idle/app'
+  pod 'mpplib', :path => '/Users/wuhaibao/IdeaProjects/Idle/mpplib'
   target 'iosAppTests' do
     inherit! :search_paths
     # Pods for testing
