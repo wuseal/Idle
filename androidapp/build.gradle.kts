@@ -24,7 +24,7 @@ android {
     }
 
 }
-val kotlin_version: String = property("kotlin_version").toString()
+val kotlin_version: String by project
 
 dependencies {
     implementation(fileTree("dir" to "libs", "include" to arrayOf("*.jar")))
