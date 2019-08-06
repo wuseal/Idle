@@ -1,5 +1,3 @@
-val kotlin_version: String = "1.3.41"
-
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -26,6 +24,7 @@ android {
     }
 
 }
+val kotlin_version: String = property("kotlin_version").toString()
 
 dependencies {
     implementation(fileTree("dir" to "libs", "include" to arrayOf("*.jar")))
