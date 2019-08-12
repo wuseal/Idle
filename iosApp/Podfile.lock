@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - mpplib (1.0.1):
+  - mpplib (1.0.3):
     - AFNetworking (~> 3.2.0)
 
 DEPENDENCIES:
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  mpplib: 0117e92302b4c50a543a87b791098dbb10ce976a
+  mpplib: b24293ba37d338f8e08d71850f75c43d3d407004
 
 PODFILE CHECKSUM: 27f191c360535c16a5e16e02e2588330487e0105
 

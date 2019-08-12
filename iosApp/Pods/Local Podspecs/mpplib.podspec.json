@@ -1,10 +1,10 @@
 {
   "name": "mpplib",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "homepage": "Link to a Kotlin/Native module homepage",
   "source": {
     "git": "Not Published",
-    "tag": "Cocoapods/mpplib/1.0.1"
+    "tag": "Cocoapods/mpplib/1.0.3"
   },
   "authors": "",
   "license": "",

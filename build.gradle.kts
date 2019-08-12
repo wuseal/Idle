@@ -1,5 +1,5 @@
 buildscript {
-    val kotlin_version:String = "1.3.41"
+    val kotlinVersion:String by project
     repositories {
         maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
         maven { setUrl("https://maven.aliyun.com/repository/google") }
@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.4.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
 
@@ -15,5 +15,6 @@ allprojects {
     repositories {
         maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
         maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/central") }
     }
 }

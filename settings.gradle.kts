@@ -7,14 +7,17 @@ pluginManagement {
 
     resolutionStrategy {
 
-        val kotlin_version: String by settings
+        val kotlinVersion: String by settings
         eachPlugin {
             when {
                 requested.id.id == "org.jetbrains.kotlin.native.cocoapods" ||
                         requested.id.id == "kotlin-native-cocoapods" ->
-                    useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+                    useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
                 requested.id.id.startsWith("org.jetbrains.kotlin") ->
-                    useVersion(kotlin_version)
+                    useVersion(kotlinVersion)
+                requested.id.id == "kotlinx-serialization" -> {
+                    useModule("org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion")
+                }
             }
         }
     }
@@ -23,3 +26,5 @@ rootProject.name = "Idle"
 
 include(":mpplib")
 include(":androidapp")
+
+enableFeaturePreview("GRADLE_METADATA")

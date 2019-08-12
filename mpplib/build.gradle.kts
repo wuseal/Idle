@@ -2,17 +2,17 @@ plugins {
     id("org.jetbrains.kotlin.multiplatform")
     id("org.jetbrains.kotlin.native.cocoapods")
     id("com.android.library")
-}
-
-repositories {
-    maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
-    maven { setUrl("https://maven.aliyun.com/repository/google") }
-    maven { setUrl("https://maven.aliyun.com/repository/central") }
+    id("kotlinx-serialization")
 }
 
 // CocoaPods requires the podspec to have a version.
-version = "1.0.1"
+version = "1.0.3"
 group = "wu.seal.idle.library"
+
+val coroutineVersion: String by project
+val serializationVersion: String by project
+val ktorVersion: String by project
+val napierVersion: String by project
 
 android {
     compileSdkVersion(28)
@@ -24,21 +24,19 @@ android {
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        val release by getting{
+        val release by getting {
             isMinifyEnabled = false
         }
     }
 }
 
 dependencies {
-    //    implementation(fileTree(mapOf("dir" to "libs", "include" to ["*.jar"])))
-    implementation("com.android.support:appcompat-v7:28.0.0")
-    implementation("com.android.support.constraint:constraint-layout:1.1.3")
+    implementation(fileTree("dir" to "libs", "include" to arrayOf("*.jar")))
     androidTestImplementation("com.android.support.test:runner:1.0.2")
 }
 
 kotlin {
-    android("android")
+    android()
     iosArm32()
     iosArm64()
     iosX64()
@@ -54,6 +52,10 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(kotlin("stdlib-common"))
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$serializationVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutineVersion")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+//                implementation("com.github.aakira:napier:$napierVersion")
             }
         }
         commonTest {
@@ -65,6 +67,10 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(kotlin("stdlib"))
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serializationVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
+                implementation("io.ktor:ktor-client-android:$ktorVersion")
+//                implementation("com.github.aakira:napier-android:$napierVersion")
             }
         }
         val androidTest by getting {
@@ -78,6 +84,12 @@ kotlin {
         val commonTest by getting
         val iosMain by creating {
             dependsOn(commonMain)
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serializationVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutineVersion")
+                implementation("io.ktor:ktor-client-ios:$ktorVersion")
+                implementation("io.ktor:ktor-client-core-native:$ktorVersion")
+            }
         }
         val iosTest by creating {
             dependsOn(commonTest)
