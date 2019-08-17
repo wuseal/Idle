@@ -1,7 +1,10 @@
 package wu.seal.app.idle.common
 
-actual object MPPLibModule {
-    actual fun initModule() {
+import wu.seal.app.idle.common.utils.LogUtil
 
+actual object MPPLibModule {
+    private val tag = "MPPLibModule"
+    actual fun initModule() {
+        LogUtil.i(tag,"init ios mpp implement")
     }
 }

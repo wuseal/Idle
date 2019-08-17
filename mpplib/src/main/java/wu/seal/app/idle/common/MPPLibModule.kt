@@ -1,10 +1,10 @@
 package wu.seal.app.idle.common
 
-//import com.github.aakira.napier.DebugAntilog
-//import com.github.aakira.napier.Napier
+import wu.seal.app.idle.common.utils.LogUtil
 
 actual object MPPLibModule {
+    private val tag = "MPPLibModule"
     actual fun initModule() {
-//        Napier.base(DebugAntilog())
+        LogUtil.i(tag,"init Android mpp implement")
     }
 }

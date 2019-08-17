@@ -6,4 +6,4 @@ import wu.seal.app.idle.common.base.error.NoneError
  * Created by Seal.Wu on 2019-08-10
  * Description: Responsed data from http request
  */
-class ResponseData<T>(val responseData: T?, val error: Throwable = NoneError("Data Obtain Successfully!"))
+data class ResponseData<T>(val responseData: T?, val error: Throwable = NoneError("Data Obtain Successfully!"))

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		22B929458298DA91E4005E48 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */; };
 		794954038F4901EF40287246 /* Pods_iosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */; };
+		7AF1957C2307D5B400A2C146 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1957B2307D5B400A2C146 /* NewsListTableViewController.swift */; };
+		7AF1957E2307D7E200A2C146 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1957D2307D7E200A2C146 /* NewsTableViewCell.swift */; };
+		7AF195842308112F00A2C146 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF195832308112F00A2C146 /* Media.xcassets */; };
+		7AF19586230834AB00A2C146 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF19585230834AB00A2C146 /* WebKit.framework */; };
 		F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E0207FA40F0085E80D /* AppDelegate.swift */; };
 		F861D7E3207FA40F0085E80D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E2207FA40F0085E80D /* ViewController.swift */; };
 		F861D7E6207FA40F0085E80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F861D7E4207FA40F0085E80D /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		466C5CDED7AB0EA39924B3C3 /* Pods-iosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.release.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF1957B2307D5B400A2C146 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		7AF1957D2307D7E200A2C146 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		7AF195832308112F00A2C146 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		7AF19585230834AB00A2C146 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AC7BBDD7C0505A6E7D867351 /* Pods-iosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.debug.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C41FAC87F26FB04866653361 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF19586230834AB00A2C146 /* WebKit.framework in Frameworks */,
 				22B929458298DA91E4005E48 /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +99,7 @@
 		0ED23A7090C31A23E4A167F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AF19585230834AB00A2C146 /* WebKit.framework */,
 				49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */,
 				C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */,
 			);
@@ -136,6 +146,9 @@
 				F861D7E4207FA40F0085E80D /* Main.storyboard */,
 				F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */,
 				F861D7EC207FA4100085E80D /* Info.plist */,
+				7AF1957B2307D5B400A2C146 /* NewsListTableViewController.swift */,
+				7AF1957D2307D7E200A2C146 /* NewsTableViewCell.swift */,
+				7AF195832308112F00A2C146 /* Media.xcassets */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -253,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F861D7EB207FA4100085E80D /* LaunchScreen.storyboard in Resources */,
+				7AF195842308112F00A2C146 /* Media.xcassets in Resources */,
 				F861D7E6207FA40F0085E80D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +350,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F861D7E3207FA40F0085E80D /* ViewController.swift in Sources */,
+				7AF1957C2307D5B400A2C146 /* NewsListTableViewController.swift in Sources */,
+				7AF1957E2307D7E200A2C146 /* NewsTableViewCell.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +516,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C41FAC87F26FB04866653361 /* Pods-iosApp.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86B52M9RTH;
 				ENABLE_BITCODE = NO;
@@ -512,7 +530,7 @@
 				OTHER_LDFLAGS = "-v";
 				PRODUCT_BUNDLE_IDENTIFIER = wu.seal.mpp.idle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -522,6 +540,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0924DB41276B0C867112EE6 /* Pods-iosApp.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86B52M9RTH;
 				ENABLE_BITCODE = NO;
@@ -534,7 +554,7 @@
 				OTHER_LDFLAGS = "-v";
 				PRODUCT_BUNDLE_IDENTIFIER = wu.seal.mpp.idle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -555,7 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.iosAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
 			};
@@ -576,7 +596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.iosAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
 			};
@@ -609,7 +629,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -643,7 +663,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

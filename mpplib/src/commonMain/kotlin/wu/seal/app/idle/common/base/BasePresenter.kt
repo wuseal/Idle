@@ -1,9 +1,9 @@
 package wu.seal.app.idle.common.base
 
-//import com.github.aakira.napier.Napier
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
+import wu.seal.app.idle.common.utils.LogUtil
 import kotlin.coroutines.CoroutineContext
 
 open class BasePresenter(private val uiContext: CoroutineContext,private val baseView:BaseView) : CoroutineScope {
@@ -11,7 +11,7 @@ open class BasePresenter(private val uiContext: CoroutineContext,private val bas
     private val job = Job()
     private val exceptionHandler = CoroutineExceptionHandler { _, throwable ->
         baseView.showError(throwable)
-//        Napier.e(throwable.message.toString(),throwable)
+        LogUtil.e(tag = "CoroutineExceptionHandler",message = throwable.message.toString(),exception = throwable)
     }
 
     override val coroutineContext: CoroutineContext

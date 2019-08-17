@@ -8,6 +8,8 @@ target 'iosApp' do
   use_frameworks!
 
   # Pods for iosApp
+  pod 'Toaster'
+  pod 'Nuke',"7.6.3"
   pod 'mpplib', :path => '/Users/wuhaibao/IdeaProjects/Idle/mpplib'
   target 'iosAppTests' do
     inherit! :search_paths

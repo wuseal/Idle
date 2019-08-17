@@ -6,7 +6,7 @@ plugins {
 }
 
 // CocoaPods requires the podspec to have a version.
-version = "1.0.3"
+version = "1.0.7"
 group = "wu.seal.idle.library"
 
 val coroutineVersion: String by project
@@ -55,7 +55,6 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$serializationVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutineVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
-//                implementation("com.github.aakira:napier:$napierVersion")
             }
         }
         commonTest {
@@ -70,7 +69,6 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serializationVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
                 implementation("io.ktor:ktor-client-android:$ktorVersion")
-//                implementation("com.github.aakira:napier-android:$napierVersion")
             }
         }
         val androidTest by getting {
@@ -88,7 +86,6 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serializationVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutineVersion")
                 implementation("io.ktor:ktor-client-ios:$ktorVersion")
-                implementation("io.ktor:ktor-client-core-native:$ktorVersion")
             }
         }
         val iosTest by creating {
