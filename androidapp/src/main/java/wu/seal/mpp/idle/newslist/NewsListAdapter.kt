@@ -1,5 +1,6 @@
 package wu.seal.mpp.idle.newslist
 
+import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,9 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_news.view.*
-import luyao.util.ktx.ext.openBrowser
 import wu.seal.app.idle.common.newslist.model.News
 import wu.seal.mpp.idle.R
+import wu.seal.mpp.idle.WebViewActivity
 
 /**
  * Created by Seal.Wu on 2019-08-10
@@ -26,8 +27,9 @@ class NewsListAdapter(newsList: List<News>) : RecyclerView.Adapter<NewsListAdapt
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): NewsListAdapter.ViewHolder {
         val itemView = LayoutInflater.from(p0.context).inflate(R.layout.item_news, p0, false)
         val image = itemView.image_news
-        val text = itemView.title_news
-        return ViewHolder(itemView, image, text)
+        val title = itemView.title_news
+        val time = itemView.news_time
+        return ViewHolder(itemView, image, title,time)
     }
 
     override fun getItemCount(): Int {
@@ -37,9 +39,10 @@ class NewsListAdapter(newsList: List<News>) : RecyclerView.Adapter<NewsListAdapt
     override fun onBindViewHolder(p0: NewsListAdapter.ViewHolder, p1: Int) {
         val news = mNewsList[p1]
         p0.title.text = news.title
+        p0.time.text = news.passtime
         Glide.with(p0.image.context).load(news.image).into(p0.image)
         p0.itemView.setOnClickListener {
-            it.context.openBrowser(news.path)
+            WebViewActivity.launch(p0.itemView.context as Activity, news.path, news.title)
         }
     }
 
@@ -47,5 +50,10 @@ class NewsListAdapter(newsList: List<News>) : RecyclerView.Adapter<NewsListAdapt
         mNewsList.addAll(appendData)
     }
 
-    class ViewHolder(itemView: View, val image: ImageView, val title: TextView) : RecyclerView.ViewHolder(itemView)
+    class ViewHolder(
+        itemView: View,
+        val image: ImageView,
+        val title: TextView,
+        val time: TextView
+    ) : RecyclerView.ViewHolder(itemView)
 }

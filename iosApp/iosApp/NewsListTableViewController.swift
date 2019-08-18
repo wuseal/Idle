@@ -76,6 +76,7 @@ class NewsListTableViewController: UITableViewController, NewsListView {
         }
         let newsItem = news[indexPath.row]
         cell.newsTitle.text = newsItem.title
+        cell.time.text = newsItem.passtime
         Nuke.loadImage(with: URL(string: newsItem.image) ?? defaultPicURL, into: cell.newsHead)
 
         //when visible last item and could load more able, do the load more function

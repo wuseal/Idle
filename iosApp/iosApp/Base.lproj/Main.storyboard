@@ -70,7 +70,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-20-11m">
-                                            <rect key="frame" x="98" y="11" width="261" height="68"/>
+                                            <rect key="frame" x="98" y="4" width="261" height="58"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysM-hi-r4G">
+                                            <rect key="frame" x="317" y="67" width="42" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -79,15 +85,18 @@
                                     <constraints>
                                         <constraint firstItem="3Jz-20-11m" firstAttribute="leading" secondItem="TvR-4b-bKR" secondAttribute="trailing" constant="8" symbolic="YES" id="4xU-uP-Hgc"/>
                                         <constraint firstItem="TvR-4b-bKR" firstAttribute="leading" secondItem="aEp-HX-zbq" secondAttribute="leading" id="SPQ-GH-koO"/>
+                                        <constraint firstItem="ysM-hi-r4G" firstAttribute="bottom" secondItem="aEp-HX-zbq" secondAttribute="bottom" constant="-2" id="V8E-wr-iNq"/>
                                         <constraint firstItem="3Jz-20-11m" firstAttribute="trailing" secondItem="aEp-HX-zbq" secondAttribute="trailingMargin" id="bWx-zB-oeg"/>
-                                        <constraint firstItem="3Jz-20-11m" firstAttribute="top" secondItem="aEp-HX-zbq" secondAttribute="topMargin" id="gRR-As-uXi"/>
-                                        <constraint firstItem="3Jz-20-11m" firstAttribute="bottom" secondItem="aEp-HX-zbq" secondAttribute="bottomMargin" id="ush-3D-bkN"/>
-                                        <constraint firstItem="3Jz-20-11m" firstAttribute="centerY" secondItem="TvR-4b-bKR" secondAttribute="centerY" id="yE8-we-vCk"/>
+                                        <constraint firstItem="3Jz-20-11m" firstAttribute="top" secondItem="aEp-HX-zbq" secondAttribute="topMargin" constant="-7" id="gRR-As-uXi"/>
+                                        <constraint firstItem="3Jz-20-11m" firstAttribute="bottom" secondItem="aEp-HX-zbq" secondAttribute="bottomMargin" constant="-17" id="ush-3D-bkN"/>
+                                        <constraint firstItem="3Jz-20-11m" firstAttribute="centerY" secondItem="TvR-4b-bKR" secondAttribute="centerY" constant="-12" id="yE8-we-vCk"/>
+                                        <constraint firstItem="ysM-hi-r4G" firstAttribute="trailing" secondItem="aEp-HX-zbq" secondAttribute="trailing" constant="-16" id="yoz-0j-e5W"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="newsHead" destination="TvR-4b-bKR" id="JUW-1Q-utN"/>
                                     <outlet property="newsTitle" destination="3Jz-20-11m" id="tn7-zn-VlX"/>
+                                    <outlet property="time" destination="ysM-hi-r4G" id="D87-TE-mRi"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="9uL-hV-bkw"/>
                                 </connections>
                             </tableViewCell>

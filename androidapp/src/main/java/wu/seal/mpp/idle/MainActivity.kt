@@ -42,8 +42,8 @@ class MainActivity : BaseActivity(), NewsListView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Sample().checkMe()
         setContentView(R.layout.activity_main)
+        supportActionBar?.title = "新闻列表"
         request(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE) {
             news_list_view.addOnScrollListener(object : RecyclerView.OnScrollListener() {
                 override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {

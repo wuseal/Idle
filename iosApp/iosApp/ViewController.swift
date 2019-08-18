@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = urlTitle
+        webview.configuration.allowsInlineMediaPlayback = true
         webview.load(URLRequest(url: URL(string: url)!))
     }
 
