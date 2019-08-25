@@ -37,9 +37,17 @@ dependencies {
 
 kotlin {
     android()
-    iosArm32()
-    iosArm64()
-    iosX64()
+    // Add a platform switching to have an IDE support.
+    val buildForDevice = project.findProperty("kotlin.native.cocoapods.target") == "ios_arm"
+    if (buildForDevice) {
+        iosArm64("iOS64")
+        iosArm32("iOS32")
+        val iosMain by sourceSets.creating
+        sourceSets["iOS64Main"].dependsOn(iosMain)
+        sourceSets["iOS32Main"].dependsOn(iosMain)
+    } else {
+        iosX64("ios")
+    }
     // This is for iPhone emulator
     // Switch here to iosArm64 (or iosArm32) to build library for iPhone device
     cocoapods {
@@ -80,35 +88,13 @@ kotlin {
 
         val commonMain by getting
         val commonTest by getting
-        val iosMain by creating {
+        val iosMain by getting {
             dependsOn(commonMain)
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serializationVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutineVersion")
                 implementation("io.ktor:ktor-client-ios:$ktorVersion")
             }
-        }
-        val iosTest by creating {
-            dependsOn(commonTest)
-        }
-
-        iosArm32().compilations["test"].defaultSourceSet {
-            dependsOn(iosTest)
-        }
-        iosArm32().compilations["main"].defaultSourceSet {
-            dependsOn(iosMain)
-        }
-        iosArm64().compilations["test"].defaultSourceSet {
-            dependsOn(iosTest)
-        }
-        iosArm64().compilations["main"].defaultSourceSet {
-            dependsOn(iosMain)
-        }
-        iosX64().compilations["test"].defaultSourceSet {
-            dependsOn(iosTest)
-        }
-        iosX64().compilations["main"].defaultSourceSet {
-            dependsOn(iosMain)
         }
     }
 
