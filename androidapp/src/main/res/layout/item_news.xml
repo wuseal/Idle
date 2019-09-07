@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="5dp"
@@ -10,10 +11,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
         android:contentDescription="@null" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -22,13 +24,17 @@
             android:layout_width="match_parent"
             android:padding="3dp"
             android:layout_height="0dp"
+            android:textSize="15sp"
+            tools:text="深入甘肃考察调研、主持中央政治局会议、主持召开中央财经委员会会议、出席2019年国际篮联篮球世界杯开幕式……初秋八月，习近平总书记的重要活动格局宏大，影响深远。新华社《学习进行时》原创品牌栏目“讲习所”推出文章，和您一起体会"
             android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/news_time"
             android:gravity="bottom|end"
+            android:textSize="12sp"
             android:layout_width="match_parent"
             android:padding="3dp"
+            tools:text="2019-09-08"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
