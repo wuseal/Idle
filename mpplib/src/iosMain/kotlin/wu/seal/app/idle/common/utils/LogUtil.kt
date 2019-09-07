@@ -9,7 +9,6 @@ actual object LogUtil {
     }
     actual fun w(tag: String, message: String, exception: Throwable) {
         println("$tag\t$message")
-
     }
     actual fun e(tag: String, message: String) {
         println("$tag\t$message")

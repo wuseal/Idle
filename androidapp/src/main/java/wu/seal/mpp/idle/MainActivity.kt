@@ -8,7 +8,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import luyao.util.ktx.ext.permission.request
 import luyao.util.ktx.ext.toast
-import sample.Sample
 import wu.seal.app.idle.common.newslist.NewsListPresenter
 import wu.seal.app.idle.common.newslist.model.News
 import wu.seal.app.idle.common.newslist.view.NewsListView
