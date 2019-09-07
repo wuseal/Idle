@@ -1,7 +1,6 @@
 package wu.seal.app.idle.common.newslist.model
 
 import io.ktor.client.HttpClient
-import io.ktor.client.request.forms.formData
 import io.ktor.client.request.forms.submitForm
 import io.ktor.client.request.url
 import io.ktor.client.response.HttpResponse
@@ -20,7 +19,6 @@ class NewsListRepositoryImp : NewsListRepository {
 
     @UnstableDefault
     override suspend fun loadData(): ResponseData<List<News>> = loadData(1, defaultPageCount)
-
 
     @UnstableDefault
     override suspend fun loadData(page: Int, count: Int): ResponseData<List<News>> {
