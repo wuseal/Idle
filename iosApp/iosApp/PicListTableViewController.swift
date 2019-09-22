@@ -9,7 +9,10 @@ import UIKit
 import mpplib
 import Toaster
 import Nuke
-
+/**
+*
+* todo: 图片列表滑动到新的10条数据时候差不多会有一个闪动现象，而且闪过后原来滑到的图片位置会闪到别的位置上，这个需要改进
+*/
 class PicListTableViewController: UITableViewController, PicListView {
 
     private let tag = "PicListTableViewController"
