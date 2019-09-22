@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		22B929458298DA91E4005E48 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */; };
 		794954038F4901EF40287246 /* Pods_iosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */; };
+		7A11244423378832005C1EDF /* PicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11244323378832005C1EDF /* PicListTableViewController.swift */; };
+		7A1124462337886F005C1EDF /* PictureItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1124452337886F005C1EDF /* PictureItemTableViewCell.swift */; };
+		7A112448233788DC005C1EDF /* PictureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A112447233788DC005C1EDF /* PictureDetailViewController.swift */; };
 		7AF1957C2307D5B400A2C146 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1957B2307D5B400A2C146 /* NewsListTableViewController.swift */; };
 		7AF1957E2307D7E200A2C146 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1957D2307D7E200A2C146 /* NewsTableViewCell.swift */; };
 		7AF195842308112F00A2C146 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF195832308112F00A2C146 /* Media.xcassets */; };
@@ -48,6 +51,9 @@
 /* Begin PBXFileReference section */
 		466C5CDED7AB0EA39924B3C3 /* Pods-iosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.release.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A11244323378832005C1EDF /* PicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicListTableViewController.swift; sourceTree = "<group>"; };
+		7A1124452337886F005C1EDF /* PictureItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItemTableViewCell.swift; sourceTree = "<group>"; };
+		7A112447233788DC005C1EDF /* PictureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDetailViewController.swift; sourceTree = "<group>"; };
 		7AF1957B2307D5B400A2C146 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		7AF1957D2307D7E200A2C146 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		7AF195832308112F00A2C146 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				7AF1957B2307D5B400A2C146 /* NewsListTableViewController.swift */,
 				7AF1957D2307D7E200A2C146 /* NewsTableViewCell.swift */,
 				7AF195832308112F00A2C146 /* Media.xcassets */,
+				7A11244323378832005C1EDF /* PicListTableViewController.swift */,
+				7A1124452337886F005C1EDF /* PictureItemTableViewCell.swift */,
+				7A112447233788DC005C1EDF /* PictureDetailViewController.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -351,7 +360,10 @@
 			files = (
 				F861D7E3207FA40F0085E80D /* ViewController.swift in Sources */,
 				7AF1957C2307D5B400A2C146 /* NewsListTableViewController.swift in Sources */,
+				7A112448233788DC005C1EDF /* PictureDetailViewController.swift in Sources */,
 				7AF1957E2307D7E200A2C146 /* NewsTableViewCell.swift in Sources */,
+				7A1124462337886F005C1EDF /* PictureItemTableViewCell.swift in Sources */,
+				7A11244423378832005C1EDF /* PicListTableViewController.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
