@@ -11,7 +11,7 @@ open class BasePresenter(private val uiContext: CoroutineContext,private val bas
     private val job = Job()
     private val exceptionHandler = CoroutineExceptionHandler { _, throwable ->
         baseView.showError(throwable)
-        LogUtil.e(tag = "CoroutineExceptionHandler",message = throwable.message.toString(),exception = throwable)
+        LogUtil.e(tag = "CoroutineExceptionHandler", message = throwable.message.toString(),exception = throwable)
     }
 
     override val coroutineContext: CoroutineContext

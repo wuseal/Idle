@@ -2,64 +2,57 @@ package wu.seal.mpp.idle
 
 import android.Manifest
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.Dispatchers
 import luyao.util.ktx.ext.permission.request
-import luyao.util.ktx.ext.toast
-import wu.seal.app.idle.common.newslist.NewsListPresenter
-import wu.seal.app.idle.common.newslist.model.News
-import wu.seal.app.idle.common.newslist.view.NewsListView
-import wu.seal.mpp.idle.newslist.NewsListAdapter
+import java.lang.UnsupportedOperationException
 
+class MainActivity : BaseActivity() {
 
-class MainActivity : BaseActivity(), NewsListView {
-
-    private val presenter = NewsListPresenter(Dispatchers.Main, this)
-    private lateinit var adapter: NewsListAdapter
-    private var couldLoadMore = true
-
-    override fun initWithData(newsList: List<News>) {
-        adapter = NewsListAdapter(newsList)
-        news_list_view.adapter = adapter
-    }
-
-    override fun showNoAnyMore() {
-        toast("没有更多内容了")
-    }
-
-    override fun appendItems(appendData: List<News>) {
-        adapter.appendItems(appendData)
-        adapter.notifyDataSetChanged()
-    }
-
-    override fun disableLoadMore() {
-        couldLoadMore = false
-    }
-
+    private val tabIds = arrayListOf(R.id.news_list, R.id.pic_list)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportActionBar?.title = "新闻列表"
+        supportActionBar?.title = "小娱乐Idle"
         request(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE) {
-            news_list_view.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                    if (isSlideToBottom(recyclerView) && couldLoadMore) {
-                        presenter.executeLoadMoreNewsListUserCase()
-                    }
-                }
-            })
-            news_list_view.layoutManager = LinearLayoutManager(this@MainActivity)
+            initMainPage()
+        }
+    }
 
-            presenter.executeLoadMoreNewsListUserCase()
+    private fun initMainPage() {
+
+        viewPager.adapter = MainPageFragmentAdapter(supportFragmentManager)
+
+        tabGroup.setOnCheckedChangeListener { _, checkedId ->
+            viewPager.currentItem = tabIds.indexOf(checkedId)
+        }
+        viewPager.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
+            override fun onPageSelected(position: Int) {
+                tabGroup.check(tabIds[position])
+            }
+        })
+
+    }
+
+    class MainPageFragmentAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(
+        fragmentManager,
+        BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
+    ) {
+        override fun getItem(position: Int): Fragment {
+            return when (position) {
+                0 -> NewsListFragment()
+                1 -> PicListFragment.newInstance()
+                else -> throw UnsupportedOperationException("不支持当前的item索引: $position")
+            }
         }
 
+        override fun getCount(): Int {
+            return 2
+        }
     }
 
-    private fun isSlideToBottom(recyclerView: RecyclerView?): Boolean {
-        if (recyclerView == null) return false
-        return recyclerView.computeVerticalScrollExtent() + recyclerView.computeVerticalScrollOffset() >= recyclerView.computeVerticalScrollRange()
-    }
 }

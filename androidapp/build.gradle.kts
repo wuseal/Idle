@@ -60,4 +60,7 @@ repositories {
         name = "glide-snapshot"
         url = uri("http://oss.sonatype.org/content/repositories/snapshots")
     }
+    maven {
+        url = uri("https://jitpack.io")
+    }
 }

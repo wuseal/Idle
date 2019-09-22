@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="5dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/news_list_view"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
+    <RadioGroup
+        android:id="@+id/tabGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:checkedButton="@id/news_list"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <RadioButton
+            android:id="@+id/news_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/md_transparent"
+            android:gravity="center"
+            android:background="@drawable/tab_selector"
+            android:text="新闻" />
+
+        <RadioButton
+            android:id="@+id/pic_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@drawable/md_transparent"
+            android:background="@drawable/tab_selector"
+            android:text="美图" />
+    </RadioGroup>
+
+</LinearLayout>
