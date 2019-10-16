@@ -50,6 +50,7 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.10.0-SNAPSHOT")
     kapt("com.github.bumptech.glide:compiler:4.10.0-SNAPSHOT")
     api(project(":mpplib"))
+    implementation(project(":flutter"))
     testImplementation("junit:junit:4.12")
     androidTestImplementation("com.android.support.test:runner:1.0.2")
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")

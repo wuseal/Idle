@@ -28,3 +28,7 @@ include(":mpplib")
 include(":androidapp")
 
 enableFeaturePreview("GRADLE_METADATA")
+
+apply { from("flutter_settings.gradle") }
+
+
