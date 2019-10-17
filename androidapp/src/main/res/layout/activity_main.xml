@@ -38,6 +38,16 @@
             android:button="@drawable/md_transparent"
             android:background="@drawable/tab_selector"
             android:text="美图" />
+
+        <RadioButton
+                android:id="@+id/duanzi_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@drawable/md_transparent"
+                android:background="@drawable/tab_selector"
+                android:text="段子" />
     </RadioGroup>
 
 </LinearLayout>
