@@ -10,8 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_news.view.*
 import wu.seal.app.idle.common.newslist.model.News
-import wu.seal.mpp.idle.R
 import wu.seal.mpp.idle.WebViewActivity
+import wu.seal.mpp.idle.R
+
 
 /**
  * Created by Seal.Wu on 2019-08-10

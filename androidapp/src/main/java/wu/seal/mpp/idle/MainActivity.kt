@@ -45,7 +45,7 @@ class MainActivity : BaseActivity() {
         BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
     ) {
 
-        private val duanziFlutterFragment = Flutter.createFragment("duanzi_entry")
+        private val duanziFlutterFragment = DuanZiListFragment.create()
         private val newsListFragment = NewsListFragment()
         private val picListFragment = PicListFragment.newInstance()
 

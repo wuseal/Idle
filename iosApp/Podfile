@@ -1,7 +1,9 @@
 project 'iosApp.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
+flutter_application_path = '/Users/wuhaibao/IdeaProjects/Idle/my_flutter/'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 target 'iosApp' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,11 +11,11 @@ target 'iosApp' do
 
   # Pods for iosApp
   pod 'Toaster'
-  pod 'Nuke',"7.6.3"
+  pod 'Nuke', "7.6.3"
   pod 'mpplib', :path => '/Users/wuhaibao/IdeaProjects/Idle/mpplib'
-  target 'iosAppTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+  install_all_flutter_pods(flutter_application_path)
+end
+target 'iosAppTests' do
+  inherit! :search_paths
+  # Pods for testing
 end

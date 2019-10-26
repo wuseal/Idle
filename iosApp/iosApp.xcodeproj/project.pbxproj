@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22B929458298DA91E4005E48 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */; };
-		794954038F4901EF40287246 /* Pods_iosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */; };
+		391DFC1198BDFA2AFE7E3DBC /* libPods-iosAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 531E1FABC3AEF94FC0EABADF /* libPods-iosAppTests.a */; };
 		7A11244423378832005C1EDF /* PicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11244323378832005C1EDF /* PicListTableViewController.swift */; };
 		7A1124462337886F005C1EDF /* PictureItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1124452337886F005C1EDF /* PictureItemTableViewCell.swift */; };
 		7A112448233788DC005C1EDF /* PictureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A112447233788DC005C1EDF /* PictureDetailViewController.swift */; };
@@ -51,6 +51,7 @@
 /* Begin PBXFileReference section */
 		466C5CDED7AB0EA39924B3C3 /* Pods-iosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.release.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531E1FABC3AEF94FC0EABADF /* libPods-iosAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A11244323378832005C1EDF /* PicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicListTableViewController.swift; sourceTree = "<group>"; };
 		7A1124452337886F005C1EDF /* PictureItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItemTableViewCell.swift; sourceTree = "<group>"; };
 		7A112447233788DC005C1EDF /* PictureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDetailViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		7AF19585230834AB00A2C146 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AC7BBDD7C0505A6E7D867351 /* Pods-iosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.debug.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C41FAC87F26FB04866653361 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
-		C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0924DB41276B0C867112EE6 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		F861D7DD207FA40F0085E80D /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F861D7E0207FA40F0085E80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794954038F4901EF40287246 /* Pods_iosAppTests.framework in Frameworks */,
+				391DFC1198BDFA2AFE7E3DBC /* libPods-iosAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			children = (
 				7AF19585230834AB00A2C146 /* WebKit.framework */,
 				49C1C81D201F88E9ACF415B1 /* Pods_iosApp.framework */,
-				C9A5148EBB29D24EE2FC2768 /* Pods_iosAppTests.framework */,
+				531E1FABC3AEF94FC0EABADF /* libPods-iosAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,6 +179,7 @@
 			buildConfigurationList = F861D7FA207FA4100085E80D /* Build configuration list for PBXNativeTarget "iosApp" */;
 			buildPhases = (
 				6F8BC74E22A244713874B736 /* [CP] Check Pods Manifest.lock */,
+				BAD09E3E3B1D42C3B32BB461 /* [CP-User] Run Flutter Build Script */,
 				F861D7D9207FA40F0085E80D /* Sources */,
 				F861D7DA207FA40F0085E80D /* Frameworks */,
 				F861D7DB207FA40F0085E80D /* Resources */,
@@ -350,6 +351,22 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BAD09E3E3B1D42C3B32BB461 /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Users/wuhaibao/IdeaProjects/Idle/my_flutter/.metadata",
+				"${SRCROOT}/../my_flutter/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../my_flutter/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../my_flutter/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../my_flutter/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 

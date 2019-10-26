@@ -48,6 +48,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
     implementation("luyao.util.ktx:AndroidUtilKTX:0.0.5")
     implementation("com.github.bumptech.glide:glide:4.10.0-SNAPSHOT")
+    implementation("com.google.code.gson:gson:2.8.6")
     kapt("com.github.bumptech.glide:compiler:4.10.0-SNAPSHOT")
     api(project(":mpplib"))
     implementation(project(":flutter"))

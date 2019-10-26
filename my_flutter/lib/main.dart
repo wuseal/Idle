@@ -1,4 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:my_flutter/duanzilist/duan_zi_entity.dart';
+import 'package:simple_logger/simple_logger.dart';
+
+final logger = SimpleLogger()..mode = LoggerMode.print;
 
 void main() => runApp(MyApp());
 
@@ -7,99 +14,210 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or press Run > Flutter Hot Reload in a Flutter IDE). Notice that the
-        // counter didn't reset back to zero; the application is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+          primaryColor: Colors.grey,
+          accentColor: Colors.white,
+          primaryColorDark: Colors.black),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _DuanZiListState createState() => _DuanZiListState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
+class _DuanZiListState extends State<MyHomePage> {
+  static const platform = const MethodChannel('wu.sea.flutter/duanziList');
+  var duanziList = <DuanZiEntity>[];
+  var loadMoreAble = true;
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+    platform.setMethodCallHandler((call) {
+      if (call.method == "initPage") {
+        setState(() {
+          duanziList.clear();
+          List list = jsonDecode(call.arguments.toString());
+          duanziList.addAll(
+              list.map((item) => new DuanZiEntity.fromJson(item)).toList());
+        });
+      } else if (call.method == "showMoreData") {
+        setState(() {
+          List list = jsonDecode(call.arguments.toString());
+          duanziList.addAll(
+              list.map((item) => new DuanZiEntity.fromJson(item)).toList());
+        });
+      } else if (call.method == "disableLoadMore") {
+        loadMoreAble = false;
+      }
+      return Future.value(Null);
+    });
+
+    if (duanziList.isEmpty) {
+      return new Text(
+        "Data is empty",
+        textAlign: TextAlign.center,
+        style: TextStyle(fontSize: 18),
+      );
+    }
+
+    return Container(
+        decoration: new BoxDecoration(color: Colors.white),
+        child: new ListView.builder(
+            itemCount: duanziList.length * 2,
+            padding: const EdgeInsets.all(0.0),
+            itemBuilder: (context, i) {
+              if (i.isOdd) {
+                return new Divider(
+                  color: Colors.black,
+                  height: 1,
+                );
+              }
+              final index = i ~/ 2;
+              logger.info(
+                  "current list index is $index duanziList.length is ${duanziList.length}, load more able is $loadMoreAble");
+              if (index >= duanziList.length - 1 && loadMoreAble) {
+                logger.info("strat load next page data");
+                // ...加载下一页
+                platform.invokeMethod("loadMore");
+              }
+              return _buildRow(duanziList[index]);
+            }));
+  }
+
+  Widget _buildRow(DuanZiEntity duanZiDetail) {
+    dynamic header = Icon(Icons.insert_emoticon);
+    if (duanZiDetail.header != null && duanZiDetail.header.isNotEmpty) {
+      header = Image.network(
+        duanZiDetail.header,
+        width: 48,
+        height: 48,
+      );
+    }
+    var title = Container(
+        margin: EdgeInsets.only(top: 10),
+        child: Row(children: [
+          Column(children: <Widget>[
+            header,
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 10),
+              width: 48,
+              child: Text(
+                duanZiDetail.name,
+                textAlign: TextAlign.left,
+                softWrap: false,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                    fontSize: 11,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.none),
+              ),
+            )
+          ]),
+          Expanded(
+              child: Text(
+            duanZiDetail.text,
+            textAlign: TextAlign.left,
+            softWrap: true,
+            style: TextStyle(
+                fontSize: 16,
+                color: Colors.black87,
+                fontWeight: FontWeight.bold,
+                decoration: TextDecoration.none),
+          ))
+        ]));
+
+    var topCommentsHeader = duanZiDetail.topCommentsHeader ??
+        "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572086421630&di=6535e421fd3b1e91ddd27653a2adb458&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ee17559a29e832f87598b51ff597.jpg%401280w_1l_2o_100sh.png";
+    var topContentHeader = Image.network(topCommentsHeader);
+    var bottom = Container(
+        padding: EdgeInsets.symmetric(horizontal: 5),
+        margin: EdgeInsets.only(bottom: 10),
+        child: Row(children: [
+          Container(
+              width: 48,
+              margin: EdgeInsets.only(right: 10),
+              child: Column(children: <Widget>[
+                Container(
+                  child: topContentHeader,
+                ),
+                Text(duanZiDetail.topCommentsName ?? "Nobody",
+                    overflow: TextOverflow.ellipsis,
+                    softWrap: false,
+                    style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.none)),
+              ])),
+          Expanded(
+            child: Text(duanZiDetail.topCommentsContent ?? "No Comment",
+                style: TextStyle(
+                    fontSize: 17,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.none)),
+          ),
+          Icon(Icons.thumb_up),
+          Container(
+            padding: EdgeInsets.only(right: 8),
+            child: Text(" " + duanZiDetail.forward,
+                style: TextStyle(
+                    fontSize: 13,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.none)),
+          ),
+          Icon(Icons.thumb_down),
+          Text(" " + duanZiDetail.down,
+              style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.black87,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.none))
+        ]));
+
+    if (duanZiDetail.type == "image") {
+      return Column(
+        children: <Widget>[
+          title,
+          Container(
+              padding: EdgeInsets.all(5.0),
+              child: Image.network(
+                duanZiDetail.images,
+                fit: BoxFit.fitWidth,
+              )),
+          bottom
+        ],
+      );
+    } else if (duanZiDetail.type == "gif") {
+      return Column(
+        children: <Widget>[
+          title,
+          Container(
+              padding: EdgeInsets.all(5.0),
+              child: Image.network(
+                duanZiDetail.images,
+                fit: BoxFit.fitWidth,
+              )),
+          bottom
+        ],
+      );
+    } else
+      return Column(
+        children: <Widget>[
+          title,
+          Container(
+              padding: EdgeInsets.all(5.0),
+              child: Image.network(
+                duanZiDetail.thumbnail,
+                fit: BoxFit.fitWidth,
+              )),
+          bottom
+        ],
+      );
   }
 }
