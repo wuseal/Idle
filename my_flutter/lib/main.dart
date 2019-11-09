@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_flutter/duanzilist/VideoPlayDemo.dart';
 import 'package:my_flutter/duanzilist/duan_zi_entity.dart';
 import 'package:simple_logger/simple_logger.dart';
 
@@ -14,12 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-          primaryColor: Colors.grey,
-          accentColor: Colors.white,
-          primaryColorDark: Colors.black),
-      home: MyHomePage(),
-    );
+        theme: ThemeData(
+            primaryColor: Colors.grey,
+            accentColor: Colors.white,
+            primaryColorDark: Colors.black),
+        home: Scaffold(
+          body: MyHomePage(),
+        ));
   }
 }
 
@@ -56,11 +58,9 @@ class _DuanZiListState extends State<MyHomePage> {
     });
 
     if (duanziList.isEmpty) {
-      return new Text(
-        "Data is empty",
-        textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18),
-      );
+      return new VideoApp(
+          url:
+              'http://uvideo.spriteapp.cn/video/2019/1026/5db3cba443964_wpd.mp4');
     }
 
     return Container(
@@ -156,7 +156,7 @@ class _DuanZiListState extends State<MyHomePage> {
           Expanded(
             child: Text(duanZiDetail.topCommentsContent ?? "No Comment",
                 style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 14,
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
                     decoration: TextDecoration.none)),
@@ -206,6 +206,42 @@ class _DuanZiListState extends State<MyHomePage> {
           bottom
         ],
       );
+    } else if (duanZiDetail.type == "video") {
+      var videoChild = Stack(
+        children: <Widget>[
+          Image.network(
+            duanZiDetail.thumbnail,
+            fit: BoxFit.fitWidth,
+          ),
+          Container(
+            child: IconButton(
+                icon: Icon(
+                  Icons.play_circle_outline,
+                  size: 80,
+                  color: Colors.green,
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
+                    var duanZiEntity = duanZiDetail;
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text(duanZiEntity.name),
+                      ),
+                      body: VideoApp(url: duanZiDetail.video,),
+                    );
+                  }));
+                }),
+          )
+        ],
+        alignment: AlignmentDirectional.center,
+      );
+      return Column(
+        children: <Widget>[
+          title,
+          Container(padding: EdgeInsets.all(5.0), child: videoChild),
+          bottom
+        ],
+      );
     } else
       return Column(
         children: <Widget>[
@@ -219,5 +255,16 @@ class _DuanZiListState extends State<MyHomePage> {
           bottom
         ],
       );
+  }
+
+  void _jumpVideoPlayPage() {
+    Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text("duanZiEntity.name"),
+        ),
+        body: VideoApp(),
+      );
+    }));
   }
 }

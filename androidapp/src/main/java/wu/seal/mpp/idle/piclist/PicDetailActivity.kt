@@ -3,6 +3,7 @@ package wu.seal.mpp.idle.piclist
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import androidx.annotation.Keep
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_detail_picture.*
 import wu.seal.mpp.idle.BaseActivity

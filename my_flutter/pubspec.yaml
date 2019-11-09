@@ -28,6 +28,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   simple_logger: ^1.5.1+1
+  video_player: ^0.10.2+5
+
+
+
 
 dev_dependencies:
   flutter_test:
