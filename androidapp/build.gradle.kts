@@ -47,21 +47,16 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
     implementation("luyao.util.ktx:AndroidUtilKTX:0.0.5")
-    implementation("com.github.bumptech.glide:glide:4.10.0-SNAPSHOT")
+    implementation("com.github.bumptech.glide:glide:4.10.0")
     implementation("com.google.code.gson:gson:2.8.6")
-    kapt("com.github.bumptech.glide:compiler:4.10.0-SNAPSHOT")
+    kapt("com.github.bumptech.glide:compiler:4.10.0")
     api(project(":mpplib"))
-    implementation(project(":flutter"))
     testImplementation("junit:junit:4.12")
     androidTestImplementation("com.android.support.test:runner:1.0.2")
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
 }
 
 repositories {
-    maven {
-        name = "glide-snapshot"
-        url = uri("http://oss.sonatype.org/content/repositories/snapshots")
-    }
     maven {
         url = uri("https://jitpack.io")
     }

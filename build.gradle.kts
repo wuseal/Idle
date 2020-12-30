@@ -1,20 +1,20 @@
 buildscript {
-    val kotlinVersion:String by project
+    val kotlinVersion: String by project
     repositories {
-        maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
-        maven { setUrl("https://maven.aliyun.com/repository/google") }
-        maven { setUrl("https://maven.aliyun.com/repository/central") }
+        jcenter()
+        google()
+        mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.5.0")
+        classpath("com.android.tools.build:gradle:4.0.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
 
 allprojects {
     repositories {
-        maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
-        maven { setUrl("https://maven.aliyun.com/repository/google") }
-        maven { setUrl("https://maven.aliyun.com/repository/central") }
+        jcenter()
+        google()
+        mavenCentral()
     }
 }

@@ -14,49 +14,32 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Flutter (1.0.0)
-  - FlutterPluginRegistrant (0.0.1):
-    - Flutter
   - mpplib (1.0.7):
     - AFNetworking (~> 3.2.0)
-  - my_flutter (0.0.1):
-    - Flutter
-  - Nuke (7.6.3)
-  - Toaster (2.2.0)
+  - Nuke (9.2.2)
+  - Toaster (2.3.0)
 
 DEPENDENCIES:
-  - Flutter (from `../my_flutter/.ios/Flutter/engine`)
-  - FlutterPluginRegistrant (from `../my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
-  - mpplib (from `/Users/wuhaibao/IdeaProjects/Idle/mpplib`)
-  - my_flutter (from `../my_flutter/.ios/Flutter`)
-  - Nuke (= 7.6.3)
-  - Toaster
+  - mpplib (from `../mpplib`)
+  - Nuke (= 9.2.2)
+  - Toaster (~> 2.3.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
     - Nuke
     - Toaster
 
 EXTERNAL SOURCES:
-  Flutter:
-    :path: "../my_flutter/.ios/Flutter/engine"
-  FlutterPluginRegistrant:
-    :path: "../my_flutter/.ios/Flutter/FlutterPluginRegistrant"
   mpplib:
-    :path: "/Users/wuhaibao/IdeaProjects/Idle/mpplib"
-  my_flutter:
-    :path: "../my_flutter/.ios/Flutter"
+    :path: "../mpplib"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  FlutterPluginRegistrant: 8855ca2b426d228cb41aa6c26c0c83b8c49e3593
-  mpplib: 728371ebe11c072779498b7e7f0fe338f9662600
-  my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
-  Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
-  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
+  mpplib: 0bb2d80ef70dcebf225d3de79128c990622f8cdc
+  Nuke: 977324335953a448b3d83e0ef3b4ce4775b155f7
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: f1249351ddd443fd03ad7334e2e285cdc28cbfef
+PODFILE CHECKSUM: 70fdac285f3cd3c4a15324c6efdddc177230e466
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

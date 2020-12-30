@@ -1,6 +1,5 @@
 import UIKit
 import mpplib
-import AFNetworking
 import WebKit
 
 class ViewController: UIViewController {

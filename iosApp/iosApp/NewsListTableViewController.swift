@@ -7,8 +7,8 @@
 
 import UIKit
 import mpplib
-import Toaster
 import Nuke
+import Toaster
 
 class NewsListTableViewController: UITableViewController, NewsListView {
 

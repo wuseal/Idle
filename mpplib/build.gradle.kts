@@ -1,8 +1,8 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform")
-    id("org.jetbrains.kotlin.native.cocoapods")
     id("com.android.library")
-    id("kotlinx-serialization")
+    kotlin("multiplatform")
+    kotlin("native.cocoapods")
+    kotlin("plugin.serialization") version "1.4.21"
 }
 
 // CocoaPods requires the podspec to have a version.
@@ -12,7 +12,6 @@ group = "wu.seal.idle.library"
 val coroutineVersion: String by project
 val serializationVersion: String by project
 val ktorVersion: String by project
-val napierVersion: String by project
 
 android {
     compileSdkVersion(28)
@@ -54,18 +53,20 @@ kotlin {
         // Configure fields required by CocoaPods.
         summary = "Some description for a Kotlin/Native module"
         homepage = "Link to a Kotlin/Native module homepage"
+        frameworkName = "mpplib"
         pod("AFNetworking", "~> 3.2.0")
+        podfile = project.file("../iosApp/Podfile")
     }
     sourceSets {
-        commonMain {
+        val commonMain by getting{
             dependencies {
                 implementation(kotlin("stdlib-common"))
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$serializationVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutineVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
             }
         }
-        commonTest {
+        val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
@@ -74,7 +75,6 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(kotlin("stdlib"))
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serializationVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
                 implementation("io.ktor:ktor-client-android:$ktorVersion")
             }
@@ -85,14 +85,8 @@ kotlin {
                 implementation(kotlin("test-junit"))
             }
         }
-
-        val commonMain by getting
-        val commonTest by getting
         val iosMain by getting {
-            dependsOn(commonMain)
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serializationVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutineVersion")
                 implementation("io.ktor:ktor-client-ios:$ktorVersion")
             }
         }

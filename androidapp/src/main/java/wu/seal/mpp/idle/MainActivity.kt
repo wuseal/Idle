@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
-import io.flutter.facade.Flutter
 import kotlinx.android.synthetic.main.activity_main.*
 import luyao.util.ktx.ext.permission.request
 import java.lang.UnsupportedOperationException

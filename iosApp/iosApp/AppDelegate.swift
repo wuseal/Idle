@@ -1,31 +1,19 @@
 import UIKit
-import mpplib
-import Flutter
-import FlutterPluginRegistrant // Only if you have Flutter Plugins.
-
 @UIApplicationMain
-class AppDelegate: FlutterAppDelegate {
-    var flutterEngine: FlutterEngine?;
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
-    // Only if you have Flutter plugins.
-    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.flutterEngine = FlutterEngine(name: "io.flutter", project: nil);
-        self.flutterEngine?.run(withEntrypoint: nil);
-        GeneratedPluginRegistrant.register(with: self.flutterEngine);
-        return super.application(application, didFinishLaunchingWithOptions: launchOptions);
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return true
     }
 
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        return true
-//    }
+    func applicationWillResignActive(_ application: UIApplication) {}
 
-//    func applicationWillResignActive(_ application: UIApplication) {}
-//
-//    func applicationDidEnterBackground(_ application: UIApplication) {}
-//
-//    func applicationWillEnterForeground(_ application: UIApplication) {}
-//
-//    func applicationDidBecomeActive(_ application: UIApplication) {}
-//
-//    func applicationWillTerminate(_ application: UIApplication) {}
+    func applicationDidEnterBackground(_ application: UIApplication) {}
+
+    func applicationWillEnterForeground(_ application: UIApplication) {}
+
+    func applicationDidBecomeActive(_ application: UIApplication) {}
+
+    func applicationWillTerminate(_ application: UIApplication) {}
 }

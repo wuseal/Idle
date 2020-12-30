@@ -23,6 +23,7 @@ class LoadMoreNewsListUserCase(private val repository: NewsListRepository, priva
         LogUtil.i(tag, "loaded data : $loadData")
         if (loadData.error !is NoneError) {
             view.showError(loadData.error)
+            loadData.error.printStackTrace()
         } else {
             val responseData = loadData.responseData
 

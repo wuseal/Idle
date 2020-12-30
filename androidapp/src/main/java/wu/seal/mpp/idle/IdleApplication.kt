@@ -1,7 +1,6 @@
 package wu.seal.mpp.idle
 
 import android.app.Application
-import io.flutter.facade.Flutter
 import wu.seal.app.idle.common.MPPLibModule
 
 
@@ -14,6 +13,5 @@ class IdleApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         MPPLibModule.initModule()
-        Flutter.startInitialization(this)
     }
 }

@@ -6,17 +6,13 @@ package wu.seal.app.idle.common.base
  */
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.Optional
 
 @Serializable
 data class OpenApiReturnData<T>(
-    @Optional
     @SerialName("code")
     val code: Int = 0,
-    @Optional
     @SerialName("message")
     val message: String = "",
-    @Optional
     @SerialName("result")
     val result: T? = null
 )
