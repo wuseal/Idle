@@ -1,5 +1,5 @@
 # Idle
-Kotlin multiplatform Flutter app (Android&amp;iOS) that providing entertainment content
+Kotlin multiplatform app (Android&amp;iOS) that providing entertainment content
 
 iOS|Android
 -|-
