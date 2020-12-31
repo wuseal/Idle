@@ -13,8 +13,8 @@ import wu.seal.app.idle.common.piclist.view.PicListView
  * Created by Seal.Wu on 2019/9/22
  * Description: Picture List Page Presenter
  */
-class PicListPresenter(uiContext: CoroutineDispatcher, private val picListView: PicListView) :
-    BasePresenter(uiContext, picListView) {
+class PicListPresenter(private val picListView: PicListView) :
+    BasePresenter(picListView) {
 
     private val picListRepository: PicListRepository = PicListRepositoryImp()
 

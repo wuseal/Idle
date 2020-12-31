@@ -45,7 +45,7 @@ class NewsListTableViewController: UITableViewController, NewsListView {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
-        presenter = NewsListPresenter(uiContext: UIDispatcher(), newsListView: self)
+        presenter = NewsListPresenter(newsListView: self)
 
         presenter?.executeLoadMoreNewsListUserCase()
         // Uncomment the following line to preserve selection between presentations

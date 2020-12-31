@@ -25,7 +25,7 @@ class PicListFragment : BaseFragment(), PicListView {
 
     private val TAG = "PicListFragment"
 
-    private val presenter = PicListPresenter(Dispatchers.Main, this)
+    private val presenter = PicListPresenter(this)
 
     private val adapter: PicListAdapter by lazy { PicListAdapter() }
 

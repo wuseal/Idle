@@ -51,7 +51,7 @@ class PicListTableViewController: UITableViewController, PicListView {
         let rowHeight = self.view.frame.width / 2
         LogUtil().i(tag: tag, message: "row height is \(rowHeight)")
         tableView.rowHeight = rowHeight
-        presenter = PicListPresenter(uiContext: UIDispatcher(), picListView: self)
+        presenter = PicListPresenter(picListView: self)
         presenter?.doInitFirstPage()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

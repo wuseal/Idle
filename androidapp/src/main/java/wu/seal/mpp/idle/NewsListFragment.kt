@@ -20,7 +20,7 @@ import wu.seal.mpp.idle.newslist.NewsListAdapter
  */
 class NewsListFragment : BaseFragment(), NewsListView {
 
-    private val presenter = NewsListPresenter(Dispatchers.Main, this)
+    private val presenter = NewsListPresenter(this)
 
     private lateinit var adapter: NewsListAdapter
     private var couldLoadMore = true

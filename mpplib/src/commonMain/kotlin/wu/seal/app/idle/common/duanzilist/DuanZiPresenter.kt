@@ -13,8 +13,8 @@ import wu.seal.app.idle.common.duanzilist.view.DuanZiListView
  * Created by Seal.Wu on 2019/10/20
  * Description:
  */
-class DuanZiPresenter(uiContext: CoroutineDispatcher, private val duanZiListView: DuanZiListView) :
-    BasePresenter(uiContext, duanZiListView) {
+class DuanZiPresenter(private val duanZiListView: DuanZiListView) :
+    BasePresenter(duanZiListView) {
 
     private val repository: DuanZiListRepository = DuanZiListRepositoryImp()
 

@@ -24,7 +24,7 @@ class DuanZiListFragment : BaseFragment() , DuanZiListView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val duanZiPresenter = DuanZiPresenter(Dispatchers.Main, this)
+        val duanZiPresenter = DuanZiPresenter( this)
 
         duanZiPresenter.initFirstPage()
     }
