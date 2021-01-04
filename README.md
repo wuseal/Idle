@@ -24,6 +24,7 @@ Android应用的构建安装可以在Windows&Linux&MacOS上进行，在开始构
 1. 环境准备
 iOS应用的安装运行仅能在MacOS系统上进行，在开始构建应用进行安装前,需要确保你的电脑开发环境有如下内容
    * 成功安装了JDK8(为确保没有问题，尽量安装java 8的版本),切记一定是JDK！
+     MacOS可以用这个命令安装：`brew install --cask adoptopenjdk8`(最新Brew的指令)
    * 成功安装了cocoaspods
    * 成功安装了XCode并且可以打开一个正常的工程
     
