@@ -17,7 +17,8 @@ Android应用的构建安装可以在Windows&Linux&MacOS上进行，在开始构
     
 #### 2. Clone本工程到本地
 #### 3. 在Clone下来的工程根目录下打开终端
-#### 4. 执行安装Android应用指令，确认当前有连接到Android设备或是已经打开Android模拟器
+#### 4. 执行安装Android应用
+确认当前有连接到Android设备或是已经打开Android模拟器,在终端中输入如下指令执行安装应用：
     ```./gradlew installDebug```
    
 ### 安装运行iOS应用到iphone或是iOS模拟器
@@ -29,13 +30,18 @@ iOS应用的安装运行仅能在MacOS系统上进行，在开始构建应用进
    * 成功安装了XCode并且可以打开一个正常的工程
     
 #### 2. Clone本工程到本地
-#### 3. 使用Xcode打开本工程目录下的`iosApp/iosApp.xcworkspace`
-#### 4. 在iosApp目录下打开终端，并执行`pod install`
-#### 5. Xcode选择对应的iphone设备或模拟器
-#### 6. 点击运行按钮，稍等一段时间，即可看到iOS应用成功安装到手机上并打开，如上图所示。(温馨提示：第一次运行时间会比较长，大约10分钟左右，需要下载相关依赖和配置环境，后面就快了)
+#### 3. 使用Xcode打开本工程
+找到工程中目录下的`iosApp/iosApp.xcworkspace`文件，使用Xcode打开
+#### 4. install pods
+在iosApp目录下打开终端，并执行`pod install`
+#### 5. 运行应用
+Xcode选择对应的iphone设备或模拟器,然后点击Xcode上的运行按钮，稍等一段时间，即可看到iOS应用成功安装到手机上并打开，如上图所示。
 
->注：一般iOS第一运行会失败，会报找不到mpplib模块的错误
->解决方案：尝试一下`pod install`后再重新运行
+* 温馨提示：第一次运行时间会比较长，大约10分钟左右，需要下载相关依赖和配置环境，后面就快了)
+
+* 一般iOS第一运行会失败，会报找不到mpplib模块的错误
+解决方案:
+再次执行一下`pod install`后重新运行
 
 
 
