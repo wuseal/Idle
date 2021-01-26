@@ -45,5 +45,9 @@ XCode选择对应的iphone设备或模拟器,然后点击Xcode上的运行按钮
 解决方案:
 再次执行一下`pod install`后重新运行
 
+## Others
+1. [How to Debug(如何调试本工程)](./DEBUG.md)
+2. [More About KMM(Kotlin multiplatform mobile)](https://kotlinlang.org/lp/mobile/)
+
 
 
