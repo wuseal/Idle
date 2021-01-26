@@ -7,6 +7,7 @@
 4. Select androidapp
 ![Select androidapp](./art/Select-Android-App.png)
 5. Click Debug button
+
 Start Debug| Debugging
 -|-
 ![Debug Android App](./art/Android-Debug-Button.png)|![Android APP Debugging](art/Android-Studio-Android-Debug-Demo.png)
@@ -19,7 +20,8 @@ Start Debug| Debugging
 5. Select iosApp
 ![Select iosApp](./art/Select-iosApp.png)
 6. Click Debug button
-Start Debug| Debugging
+
+Start Debug|Debugging
 -|-
 ![Debug iosApp](./art/iOS-Debug-Button.png)|![Debugging iosApp](art/Android-Studio-iOS-Debug-Demo.png)
 
@@ -29,6 +31,7 @@ Start Debug| Debugging
 3. Open `iosApp/iosApp.xcworkspace` with Xcode
 4. Run pod install command in iosApp dir
 5. Click debug button in Xcode
+
 Debug step into Swift| Debug step into Kotlin Code
 -|-
 ![Swift debugging](art/Xcode-Debug-Demo-Swift.png)|![Kotlin debugging](art/Xcode-Debug-Demo-Kotlin.png)
