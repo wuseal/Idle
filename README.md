@@ -47,7 +47,7 @@ Click run button on Xcode, and wait for iOS application runs on devices or simul
 Solution: (解决方案:)
 Redo `pod install` and rerun app (再次执行一下`pod install`后重新运行)
 
-## Others
+## Others (其它需知事项)
 1. [How to Debug(如何调试本工程)](./DEBUG.md)
 2. [More About KMM(Kotlin multiplatform mobile)](https://kotlinlang.org/lp/mobile/)
 
