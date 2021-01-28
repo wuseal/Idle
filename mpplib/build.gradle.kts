@@ -35,7 +35,9 @@ dependencies {
 }
 
 kotlin {
-    android()
+    android {
+        publishLibraryVariants("release", "debug")
+    }
     // Add a platform switching to have an IDE support.
     val buildForDevice = project.findProperty("kotlin.native.cocoapods.target") == "ios_arm"
     if (buildForDevice) {
