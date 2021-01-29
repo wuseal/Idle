@@ -3,6 +3,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     kotlin("plugin.serialization") version "1.4.21"
+    `maven-publish`
 }
 
 // CocoaPods requires the podspec to have a version.
