@@ -1,0 +1,6 @@
+framework module mpplib {
+    umbrella header "mpplib.h"
+
+    export *
+    module * { export * }
+}

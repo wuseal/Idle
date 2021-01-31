@@ -4,6 +4,7 @@ plugins {
     kotlin("native.cocoapods")
     kotlin("plugin.serialization") version "1.4.21"
     `maven-publish`
+    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
 }
 
 // CocoaPods requires the podspec to have a version.
@@ -35,33 +36,40 @@ dependencies {
     androidTestImplementation("com.android.support.test:runner:1.0.2")
 }
 
+
 kotlin {
     android {
         publishLibraryVariants("release", "debug")
     }
-    // Add a platform switching to have an IDE support.
-    val buildForDevice = project.findProperty("kotlin.native.cocoapods.target") == "ios_arm"
-    if (buildForDevice) {
-        iosArm64("iOS64")
-        iosArm32("iOS32")
-        val iosMain by sourceSets.creating
-        sourceSets["iOS64Main"].dependsOn(iosMain)
-        sourceSets["iOS32Main"].dependsOn(iosMain)
+    // Add a platform switching to have an IDE support.if run from xcode,then we only need to create one target to fast build
+    if (project.hasProperty("kotlin.native.cocoapods.target")) {
+        val buildForDevice = project.findProperty("kotlin.native.cocoapods.target") == "ios_arm"
+        if (buildForDevice) {
+            iosArm64("iOS64")
+            iosArm32("iOS32")
+            val iosMain by sourceSets.creating
+            sourceSets["iOS64Main"].dependsOn(iosMain)
+            sourceSets["iOS32Main"].dependsOn(iosMain)
+        } else {
+            iosX64("ios")
+        }
     } else {
-        iosX64("ios")
+        //here will creat xcframework to push it to git
+        ios()
     }
+
     // This is for iPhone emulator
     // Switch here to iosArm64 (or iosArm32) to build library for iPhone device
     cocoapods {
+        noPodspec()
         // Configure fields required by CocoaPods.
         summary = "Some description for a Kotlin/Native module"
         homepage = "Link to a Kotlin/Native module homepage"
         frameworkName = "mpplib"
         pod("AFNetworking", "~> 3.2.0")
-        podfile = project.file("../iosApp/Podfile")
     }
     sourceSets {
-        val commonMain by getting{
+        val commonMain by getting {
             dependencies {
                 implementation(kotlin("stdlib-common"))
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
@@ -95,4 +103,13 @@ kotlin {
         }
     }
 
+}
+multiplatformSwiftPackage {
+    swiftToolsVersion("5.0")
+    targetPlatforms {
+        iOS { v("9") }
+    }
+    buildConfiguration {
+        release()
+    }
 }

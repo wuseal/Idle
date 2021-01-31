@@ -13,4 +13,10 @@ data class News(
     val path: String = "",
     @SerialName("title")
     val title: String = ""
-)
+) {
+    fun getStringTwo(): String {
+        val a = image + ": " + passtime
+        val b = path + ": " + title
+        return a + "\n" + b
+    }
+}
