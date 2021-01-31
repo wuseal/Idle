@@ -20,7 +20,7 @@ PODS:
   - Toaster (2.3.0)
 
 DEPENDENCIES:
-  - mpplib (from `../mpplib`)
+  - mpplib (from `../Idle.podspec`)
   - Nuke (= 9.2.2)
   - Toaster (~> 2.3.0)
 
@@ -32,14 +32,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   mpplib:
-    :path: "../mpplib"
+    :path: "../Idle.podspec"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  mpplib: 0bb2d80ef70dcebf225d3de79128c990622f8cdc
+  mpplib: 911d0beaa403b75270674def4768bc1c069d3b39
   Nuke: 977324335953a448b3d83e0ef3b4ce4775b155f7
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 70fdac285f3cd3c4a15324c6efdddc177230e466
+PODFILE CHECKSUM: 7f51930f5e80de34d7f50a195ce68ed34b369a7f
 
 COCOAPODS: 1.10.0

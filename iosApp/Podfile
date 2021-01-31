@@ -8,7 +8,11 @@ target 'iosApp' do
   use_frameworks!
 
   # Pods for iosApp
+  # depend on kotlin soure code
   pod 'mpplib', :path => '../mpplib'
+  # if need to depend on released pod, uncomment next line and comment upon line
+  # with this method, iOS build will not triggle gradle tasks
+  # pod 'mpplib', :path => '../Idle.podspec'
   pod 'Toaster',"~> 2.3.0"
   pod 'Nuke', "9.2.2"
 

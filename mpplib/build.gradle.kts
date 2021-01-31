@@ -42,19 +42,15 @@ kotlin {
         publishLibraryVariants("release", "debug")
     }
     // Add a platform switching to have an IDE support.if run from xcode,then we only need to create one target to fast build
-    if (project.hasProperty("kotlin.native.cocoapods.target")) {
+    if (project.hasProperty("fulliOS").not()) {
         val buildForDevice = project.findProperty("kotlin.native.cocoapods.target") == "ios_arm"
         if (buildForDevice) {
-            iosArm64("iOS64")
-            iosArm32("iOS32")
-            val iosMain by sourceSets.creating
-            sourceSets["iOS64Main"].dependsOn(iosMain)
-            sourceSets["iOS32Main"].dependsOn(iosMain)
+            iosArm64("ios")
         } else {
             iosX64("ios")
         }
     } else {
-        //here will creat xcframework to push it to git
+        //here will creat xcframework contains arm64&x64
         ios()
     }
 
@@ -111,5 +107,22 @@ multiplatformSwiftPackage {
     }
     buildConfiguration {
         release()
+    }
+}
+//used to create XCFramework contains arm64 and x64
+task("createFullXCFramework") {
+    group = "multiplatform-swift-package"
+    doLast {
+        val rootProjectPath = rootProject.projectDir.absolutePath
+        val swiftPackageDir = File(rootProjectPath, "mpplib/swiftpackage")
+        swiftPackageDir.deleteRecursively()//clean origin created xcframework
+        Runtime.getRuntime().exec("$rootProjectPath/gradlew createXCFramework -PfulliOS").run {
+            inputStream.reader().forEachLine {
+                println(it)
+            }
+            errorStream.reader().forEachLine {
+                println(it)
+            }
+        }
     }
 }

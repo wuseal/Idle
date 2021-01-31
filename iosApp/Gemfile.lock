@@ -84,10 +84,11 @@ GEM
       nanaimo (~> 0.3.0)
 
 PLATFORMS
+  universal-darwin-20
   x86_64-darwin-19
 
 DEPENDENCIES
   cocoapods
 
 BUNDLED WITH
-   2.2.3
+   2.2.4

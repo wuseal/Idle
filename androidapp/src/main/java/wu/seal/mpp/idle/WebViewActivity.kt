@@ -18,20 +18,20 @@ class WebViewActivity : BaseActivity() {
         supportActionBar?.title = title
         setTitle(title)
         webview.settings.javaScriptEnabled = true
-        webview.webViewClient = object :WebViewClient(){
+        webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
-                view?.loadUrl(url)
+                view?.loadUrl(url ?: "")
                 return true
             }
         }
-        webview.loadUrl(url)
+        webview.loadUrl(url ?: "")
     }
 
-    companion object{
+    companion object {
         fun launch(activity: Activity, url: String, title: String) {
-            val intent = Intent(activity,WebViewActivity::class.java)
-            intent.putExtra("URL",url)
-            intent.putExtra("TITLE",title)
+            val intent = Intent(activity, WebViewActivity::class.java)
+            intent.putExtra("URL", url)
+            intent.putExtra("TITLE", title)
             activity.startActivity(intent)
         }
     }
