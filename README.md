@@ -51,5 +51,14 @@ Redo `pod install` and rerun app (再次执行一下`pod install`后重新运行
 1. [How to Debug(如何调试本工程)](./DEBUG.md)
 2. [More About KMM(Kotlin multiplatform mobile)](https://kotlinlang.org/lp/mobile/)
 
+## Special Try (特别尝试)
+If you want to try the classes in mpplib in your current iOS project right now without any Environment setting(No need install Java), try to add next line to your pod file:
+
+(如果你想在你的iOS工程中立马使用mpplib模块里的功能类，可以直接引入下面的代码到你的Pod文件里，而不用设置任何的前置环境设置，包括Java的安装都不需要)
+
+```ruby
+  pod 'mpplib', :git => 'https://github.com/wuseal/Idle.git'
+```
+
 
 
