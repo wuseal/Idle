@@ -17,12 +17,15 @@ internal class LoadMorePicListUseCase(
     pageCount: Int
 ) : BaseUseCase {
 
-    private val currentPage =  AtomicInt(2) //load more initial page is 2, because the first page is 1
+    private var currentPage = 2 //load more initial page is 2, because the first page is 1
 
     private val loadMoreEveryPageCount = pageCount //how many items every page will show
 
     override suspend fun execute() {
-        val responseData = picListRepository.obtainData(pageIndex = currentPage.value, pageCount = loadMoreEveryPageCount)
+        val responseData = picListRepository.obtainData(
+            pageIndex = currentPage,
+            pageCount = loadMoreEveryPageCount
+        )
         if (responseData.responseData != null) {
             val picListResponse: PicListResponse =
                 responseData.responseData
@@ -32,7 +35,7 @@ internal class LoadMorePicListUseCase(
                     picListView.showNoMoreDataTip()
                     picListView.disableLoadMore()
                 } else {
-                    currentPage.increment()//page add 1, then next execute this user case will load next page data
+                    currentPage++//page add 1, then next execute this user case will load next page data
                 }
             } else {
                 picListView.showError(HttpRequestError(picListResponse.message))

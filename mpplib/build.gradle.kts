@@ -75,6 +75,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("co.touchlab:stately-common:1.1.1")
             }
         }
         val commonTest by getting {

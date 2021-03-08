@@ -1,7 +1,7 @@
 package wu.seal.app.idle.common.newslist.model
 
+import co.touchlab.stately.ensureNeverFrozen
 import io.ktor.client.*
-import io.ktor.client.request.*
 import io.ktor.client.request.forms.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
@@ -13,6 +13,10 @@ import wu.seal.app.idle.common.base.ResponseData
 import wu.seal.app.idle.common.base.error.HttpRequestError
 
 class NewsListRepositoryImp : NewsListRepository {
+
+    init {
+        ensureNeverFrozen()
+    }
 
     override val defaultPageCount = 10
 

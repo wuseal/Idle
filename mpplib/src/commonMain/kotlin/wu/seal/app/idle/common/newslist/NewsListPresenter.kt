@@ -7,9 +7,7 @@ import wu.seal.app.idle.common.newslist.model.NewsListRepositoryImp
 import wu.seal.app.idle.common.newslist.usercase.LoadMoreNewsListUserCase
 import wu.seal.app.idle.common.newslist.usercase.NewsListUseCase
 import wu.seal.app.idle.common.newslist.view.NewsListView
-import wu.seal.app.idle.common.utils.AtomicInt
 import wu.seal.app.idle.common.utils.LogUtil
-import kotlin.coroutines.CoroutineContext
 
 /**
  * Created by Seal.Wu on 2019-08-10
@@ -20,12 +18,13 @@ class NewsListPresenter(private val newsListView: NewsListView) :
 
     private val tag: String = "NewsListPresenter"
     private val newsListRepository: NewsListRepository = NewsListRepositoryImp()
-    private val loadMoreNewsListUserCase: LoadMoreNewsListUserCase by lazy {
+    private val loadMoreNewsListUserCase: LoadMoreNewsListUserCase =
         LoadMoreNewsListUserCase(
             repository = newsListRepository,
             view = newsListView
         )
-    }
+
+
 
     /**
      * perform news list user case
