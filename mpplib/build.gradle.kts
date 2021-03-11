@@ -59,18 +59,6 @@ kotlin {
                         linkerOpts("-rpath", frameworkPath)
                         linkerOpts("-framework", "CryptoSwift")
                     }
-//                    getFramework(buildType = org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.DEBUG)?.apply {
-//                        val frameworkPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/mpplib/build/Release-iphonesimulator/CryptoSwift"
-//                        linkerOpts("-F$frameworkPath")
-//                        linkerOpts("-rpath", frameworkPath)
-//                        linkerOpts("-framework", "CryptoSwift")
-//                    }
-//                    getFramework(buildType = org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE)?.apply {
-//                        val frameworkPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/mpplib/build/Release-iphonesimulator/CryptoSwift"
-//                        linkerOpts("-F$frameworkPath")
-//                        linkerOpts("-rpath", frameworkPath)
-//                        linkerOpts("-framework", "CryptoSwift")
-//                    }
                 }
             }
         }

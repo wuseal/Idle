@@ -22,7 +22,6 @@ PODS:
   - Toaster (2.3.0)
 
 DEPENDENCIES:
-  - CryptoSwift (from `https://github.com/wuseal/CryptoSwift.git`)
   - mpplib (from `../mpplib`)
   - Nuke (= 9.2.2)
   - Toaster (~> 2.3.0)
@@ -30,19 +29,13 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - CryptoSwift
     - Nuke
     - Toaster
 
 EXTERNAL SOURCES:
-  CryptoSwift:
-    :git: https://github.com/wuseal/CryptoSwift.git
   mpplib:
     :path: "../mpplib"
-
-CHECKOUT OPTIONS:
-  CryptoSwift:
-    :commit: 25aa9030574b2eecef13957b60b5f195e4868682
-    :git: https://github.com/wuseal/CryptoSwift.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -51,6 +44,6 @@ SPEC CHECKSUMS:
   Nuke: 977324335953a448b3d83e0ef3b4ce4775b155f7
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 862749c7a01d1fc29d0ab9130a023d3550cd176b
+PODFILE CHECKSUM: e1d276a8d12897882b20fbb27ff0a24f0ac16dc6
 
 COCOAPODS: 1.10.0

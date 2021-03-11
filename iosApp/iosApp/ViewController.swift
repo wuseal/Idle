@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         navigationItem.title = urlTitle
         webview.configuration.allowsInlineMediaPlayback = true
         webview.load(URLRequest(url: URL(string: url)!))
+        SwiftPodUtil.init().doAction()
     }
 
     override func didReceiveMemoryWarning() {

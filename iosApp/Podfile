@@ -14,7 +14,6 @@ target 'iosApp' do
   # pod 'mpplib', :path => '../Idle.podspec'
   pod 'Toaster',"~> 2.3.0"
   pod 'Nuke', "9.2.2"
-  pod 'CryptoSwift', :git => 'https://github.com/wuseal/CryptoSwift.git'
 
 end
 target 'iosAppTests' do
