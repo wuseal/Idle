@@ -51,7 +51,16 @@ kotlin {
         if (buildForDevice) {
             iosArm64("ios")
         } else {
-            iosX64("ios")
+            iosX64("ios"){
+                binaries {
+                    getTest("DEBUG").apply {
+                        val frameworkPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/mpplib/build/Release-iphonesimulator/CryptoSwift"
+                        linkerOpts("-F$frameworkPath")
+                        linkerOpts("-rpath", frameworkPath)
+                        linkerOpts("-framework", "CryptoSwift")
+                    }
+                }
+            }
         }
     } else {
         //here will creat xcframework contains arm64&x64
@@ -61,12 +70,15 @@ kotlin {
     // This is for iPhone emulator
     // Switch here to iosArm64 (or iosArm32) to build library for iPhone device
     cocoapods {
-        noPodspec()
         // Configure fields required by CocoaPods.
         summary = "Some description for a Kotlin/Native module"
         homepage = "Link to a Kotlin/Native module homepage"
         frameworkName = "mpplib"
+        ios.deploymentTarget = "9.0"
         pod("AFNetworking", "~> 3.2.0")
+        pod("CryptoSwift") {
+            source = git("https://github.com/wuseal/CryptoSwift")
+        }
     }
     sourceSets {
         val commonMain by getting {
