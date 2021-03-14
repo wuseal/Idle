@@ -15,4 +15,5 @@ Pod::Spec.new do |spec|
 
 
     spec.dependency 'AFNetworking', '~> 3.2.0'
+    spec.dependency 'CryptoSwift'
 end
