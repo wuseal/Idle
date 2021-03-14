@@ -147,6 +147,14 @@ __attribute__((swift_name("MPPLibModule")))
 - (void)doInitModule __attribute__((swift_name("doInitModule()")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SwiftPodUtil")))
+@interface MpplibSwiftPodUtil : MpplibBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)doAction __attribute__((swift_name("doAction()")));
+@end;
+
 __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineScope")))
 @protocol MpplibKotlinx_coroutines_coreCoroutineScope
 @required
